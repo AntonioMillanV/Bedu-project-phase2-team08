@@ -5,7 +5,7 @@ var appDiv = document.getElementById('app');
 
     var sectionNewTask = document.createElement('section');
     sectionNewTask.id = 'newTaskSection';
-    sectionNewTask.className = 'col align-items-center';
+    sectionNewTask.className = 'col align-items-center mx-3';
 
     //Adding title to div
     let title = document.createElement('h1');

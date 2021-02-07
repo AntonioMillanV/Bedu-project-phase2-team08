@@ -7,7 +7,7 @@ function addNewTask() {
     let toDoTaskCounter = toDoContainer.children.length ++;
 
     let newTask = document.createElement('li');
-    newTask.className = 'd-flex align-items-center mx-3';
+    newTask.className = 'd-flex align-items-center mx-3 my-2';
     newTask.id = `task_${toDoTaskCounter}`;
 
     let checkBox = document.createElement('input');
@@ -49,4 +49,10 @@ function restoreTask(event){
     taskCatched.classList.remove('checked');
 
     toDoContainer.appendChild(taskCatched);
+}
+
+function removeTask(list, event) {
+    let target = event.target;
+
+    list === 'toDo' ? toDoContainer.removeChild(target.parentElement) : doneContainer.removeChild(target.parentElement);
 }

@@ -17,7 +17,7 @@ document.querySelector('#toDoTasks-container').addEventListener('click', functio
         setTaskAsDone(event);
     } else if (event.target && event.target.matches('span')) {
         if (confirm('¿Está seguro de eliminar esta tarea?')) {
-            event.currentTarget.remove();
+            removeTask('toDo', event);
         }
     }
 });
@@ -27,7 +27,7 @@ document.querySelector('#doneTasks-container').addEventListener('click', functio
         restoreTask(event);
     } else if (event.target && event.target.matches('span')) {
         if (confirm('¿Está seguro de eliminar esta tarea?')) {
-            event.currentTarget.remove();
+            removeTask('done', event);
         }
     }
 });
