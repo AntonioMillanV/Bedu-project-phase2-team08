@@ -42,7 +42,7 @@ var appDiv = document.getElementById('app');
 
     //Divider for to do tasks
     let toDoTasksDiv = document.createElement('div');
-    toDoTasksDiv.className = 'col-md-6';
+    toDoTasksDiv.className = 'col-md-6 mb-3';
     
     //Title for divider for to do tasks
     let divTitle = document.createElement('h2');
@@ -57,7 +57,7 @@ var appDiv = document.getElementById('app');
 
     //Divider for done tasks
     let doneTasksDiv = document.createElement('div');
-    doneTasksDiv.className = 'col-md-6';
+    doneTasksDiv.className = 'col-md-6 ';
     
     //Title for divider for to do tasks
     divTitle = document.createElement('h2');
